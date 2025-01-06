@@ -1,0 +1,37 @@
+@include font('Arial','Arial',400,'normal');
+@include font('icons','icomoon','normal','normal');
+%ic {
+  font-family: "icons" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+[class*="_icon-"] {
+  &:before {
+    @extend %ic;
+    display: block;
+  }
+}
+
+._icon-home:before {
+  content: "\e900";
+}
+._icon-home2:before {
+  content: "\e901";
+}
+._icon-home3:before {
+  content: "\e902";
+}
+._icon-office:before {
+  content: "\e903";
+}
+._icon-newspaper:before {
+  content: "\e904";
+}
+._icon-pencil:before {
+  content: "\e905";
+}
