@@ -1,7 +1,7 @@
 @use "sass:math";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+//@tailwind base;
+//@tailwind components;
+//@tailwind utilities;
 //-----------------------------------/ Нормализация стилей /---------------------------------------
 
 @import "modern-normalize";
@@ -27,7 +27,7 @@ $minWidth: 280;
 // Ширина полотна (макета)
 $maxWidth: 1920;
 // Ширина ограничивающего контейнера (0 = нет ограничения)
-$maxWidthContainer: 1376;
+$maxWidthContainer: 1276;
 // Общий отступ у контейнера
 // (30 = по 15px слева и справа, 0 = нет отступа)
 $containerPadding: 30;
@@ -77,6 +77,11 @@ body {
 	> * {
 		min-width: 0;
 	}
+}
+
+body {
+	background-color: $mainBgColor;
+	color: $mainColor;
 }
 //-----------------------------------/ Оболочка /---------------------------------------
 
@@ -136,3 +141,7 @@ body {
 		--text-color: #ffffff;
 	}
 }
+
+@import "partials/header";
+@import "partials/footer";
+@import "partials/index-page/hero";

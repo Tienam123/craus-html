@@ -1,6 +1,9 @@
 $fontFamily: "Avenir Roman";
 $fontSize: rem(14); // где 14(px) - размер шрифта по умолчанию из макета
 
+$mainColor: white;
+$mainBgColor: black;
+
 $breakpoints: (
 	mb320: 320px,
 	mb479: 479.98px,
